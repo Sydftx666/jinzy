@@ -1,0 +1,258 @@
+/* CSS files add styling rules to your content */
+
+/* 
+--midnight-blue: #130F65ff;
+--persian-indigo: #3A0575ff;
+--steel-pink: #D600E1ff;
+--shocking-pink: #FD00BDff;
+ */
+
+@font-face {
+  font-family: goodtimes;
+  src: url("https://cdn.glitch.com/70903e22-d66b-4abf-8af0-294b6a2e4d5d%2Fgood%20times%20rg.ttf?v=1602559377972");
+}
+
+@font-face {
+  font-family: a;
+  src: url("https://cdn.glitch.com/70903e22-d66b-4abf-8af0-294b6a2e4d5d%2FAilerons-Regular.otf?v=1602565148752");
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  /*   margin: 2em; */
+  /*   background-color: #130F65; */
+  background-color: #000000;
+  margin: 30px;
+}
+
+.center {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+.beatstars {
+  margin-top: 100px;
+}
+
+h1 {
+  font-family: goodtimes;
+  font-style: italic;
+  font-size: 72px;
+  color: #FD00BD;
+  text-shadow: 0 0 0.18em #FD00BD;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+}
+
+h2 {
+  font-family: a;
+  color: #F5F5F5;
+  text-shadow: 0 0 0.18em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 44px;
+  
+}
+
+h3 {
+  font-family: a;
+  color: #F5F5F5;
+  text-shadow: 0 0 0.18em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  margin-top: 0px;
+  margin-bottom: 100px;
+  font-size: 20px;
+}
+
+p {
+  font-family: a;
+  color: #F5F5F5;
+  text-shadow: 0 0 0.18em #1da9cc;
+/*   user-select: none;
+  white-space: nowrap; */
+  filter: blur(0.007em);
+  font-size: 28px;
+  text-align: justify;
+  
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+
+
+
+.beats {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  
+  
+.jinzy {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+  
+.intro {
+ margin: 100px auto 100px auto;
+}
+
+
+.website {
+  display: block;
+  margin: 100px auto 100px auto;
+  padding: 1rem 1rem;
+  font-family: goodtimes;
+  font-size: 1.5rem;
+  text-decoration: none;
+  /*   text-shadow:
+    -2px 4px 4px #091243, 
+    0 0 10px #00D0FF,
+    inset 1px 1px 1px white; */
+  color: #08DEEA;
+  text-shadow: 0 0 0.18em #08DEEA;
+
+
+}
+
+
+a:hover {
+  color: #FD00BD;
+  text-shadow: 0 0 0.18em #FD00BD;
+}
+
+a {
+  color: #3A0575;
+  font-size: 36px;
+}
+a: visited {
+  color: #3A0575;
+}
+
+.social {
+  margin: 200px 400px 0px 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+/* mobile device: phone  */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #130F65;
+  }
+
+  h1 {
+    font-size: 68px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-shadow: 0 0 0.1rem #1da9cc;
+    filter: blur(0.004em);
+  }
+  
+  p{
+    font-size: 20px;
+      width: 85%;
+     text-align: left;
+  }
+
+  .jinzy {
+  width: 80%;
+}
+  
+  .social {
+    margin: 200px 50px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  a: activated {
+    color: #FD00BD;
+  }
+  
+  .website{
+    font-size: 16px;
+  }
+
+  .beats {
+    width: 80%;
+  }
+}
+
+/* mobile device: tablet  */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  body {
+    background-color: #130F65;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-shadow: 0 0 0.1rem #1da9cc;
+    filter: blur(0.004em);
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+  p{
+    font-size: 24px;
+       width: 65%;
+        text-align: left;
+  }
+
+  .social {
+    margin: 200px 100px 0px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+   .jinzy {
+  width: 60%;
+}
+   .website{
+    font-size: 20px;
+  }
+  
+  .presave {
+    font-size: 1.2rem;
+  }
+
+  a: activated {
+    color: #FD00BD;
+  }
+}
